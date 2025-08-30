@@ -51,3 +51,9 @@ En esta tercer y última actividad se simula el funcionamiento de "Man in the Mi
 En cuanto al código [MitMdecode.py](./MitMdecode.py) (también requiere tener instalada la librería scapy de la actividad anterior), este lee el archivo capturado, una vez con este archivo se itera sobre cada paquete, seleccionando solo los que tienen el layer _IP_ y _ICMP_, de esta manera filtrando por los que realmente estamos buscando, de estos, se extrae el primer byte guardandolo junto al resto, así almacenando el byte encriptado hasta haber recorrido todos los paquetes, teniendo así el mensaje encriptado nuevamente.
 
 Luego de obtener tal mensaje, se descifra a través de aplicar varios corridos de cifrado cesar y luego con un diccionario de muchas palabras comunmente utilizadas en español e inglés se remarca la opción más probable de ser el mensaje original, imprimiendolo en verde.
+
+Para ejecutar el script es de la siguiente manera:
+```
+python3 MitMdecode.py encriptedMessageCaptured.pcapng
+```
+En caso de querer analizar otra captura, se cambia el arguneto de _encriptedMessageCaptured.pcapng_
