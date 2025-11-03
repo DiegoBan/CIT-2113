@@ -1,3 +1,5 @@
 .DS_Store
 .vscode/
 .venv
+./Lab04/.python-version
+./Lab04/labcripto
